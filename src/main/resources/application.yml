@@ -23,7 +23,7 @@ spring:
         - id: ebookmgmt-dashboard
           uri: http://localhost:8084
           predicates:
-            - Path= /myRentLists/**
+            - Path= /dashboards/**
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -58,7 +58,7 @@ spring:
         - id: ebookmgmt-dashboard
           uri: http://ebookmgmt-dashboard:8080
           predicates:
-            - Path= /myRentLists/**
+            - Path= /dashboards/**
       globalcors:
         corsConfigurations:
           '[/**]':
