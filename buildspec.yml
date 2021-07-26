@@ -79,7 +79,6 @@ phases:
                   ports:
                     - containerPort: 8080
         EOF
-
 cache:
   paths:
     - '/root/.m2/**/*'
