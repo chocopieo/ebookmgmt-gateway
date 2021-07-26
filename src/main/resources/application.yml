@@ -46,19 +46,19 @@ spring:
     gateway:
       routes:
         - id: ebookmgmt-rent
-          uri: http://ebookmgmt-rent:8080
+          uri: http://user18-ebookmgmt-rent:8080
           predicates:
             - Path=/rents/** 
         - id: ebookmgmt-payment
-          uri: http://ebookmgmt-payment:8080
+          uri: http://user18-ebookmgmt-payment:8080
           predicates:
             - Path=/payments/** 
         - id: ebookmgmt-book
-          uri: http://ebookmgmt-book:8080
+          uri: http://user18-ebookmgmt-book:8080
           predicates:
             - Path=/books/** 
         - id: ebookmgmt-dashboard
-          uri: http://ebookmgmt-dashboard:8080
+          uri: http://user18-ebookmgmt-dashboard:8080
           predicates:
             - Path= /dashboards/**
       globalcors:
