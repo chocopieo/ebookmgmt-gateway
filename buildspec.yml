@@ -53,8 +53,7 @@ phases:
               targetPort: 8080
           selector:
             app: $_PROJECT_NAME
-          type:
-            LoadBalancer
+          type: LoadBalancer
         EOF
       - |
         cat  <<EOF | kubectl apply -f -
@@ -80,7 +79,6 @@ phases:
                   ports:
                     - containerPort: 8080
         EOF
-
 cache:
   paths:
     - '/root/.m2/**/*'
